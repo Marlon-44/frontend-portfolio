@@ -28,7 +28,6 @@
     font-weight: 600;
     line-height: 1;
     cursor: pointer;
-    z-index: 99999;
     transition:  ease-in 0.2s;
 
 }
