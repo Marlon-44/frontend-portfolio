@@ -1,0 +1,119 @@
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: visible;
+    pointer-events: none;
+
+    background: linear-gradient(
+        to bottom,
+        #ff7503 0%,       /* color principal */
+        #ff7503 80%,      /* 80% del banner */
+        #ff1e00 100%      /* 20% multiplicado / más oscuro */
+    );
+    position: relative;
+}
+
+
+.me__img {
+    position: relative;
+    height: 100%;
+    z-index: 2;
+    right: 5vw;
+}
+
+
+.typewriter {
+    overflow: hidden;
+    /* Oculta texto mientras se “escribe” */
+    white-space: nowrap;
+    /* Que no haga salto de línea */
+    border-right: 3px solid #fff;
+    /* Cursor */
+    width: fit-content;
+
+    animation: typing 2s steps(13, end) infinite, blink 0.2s step-end infinite;
+
+}
+
+/* Animación de escribir */
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+/* Parpadeo del cursor */
+@keyframes blink {
+    0% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #ffffff79;
+    }
+
+    100% {
+        border-color: transparent;
+    }
+}
+
+
+.carouselWrapper {
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    left: 85vw;
+    z-index: 1;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    animation: scrollUp 15s linear infinite;
+    height: 100%;
+}
+
+/* Estilo para cada letra */
+.carousel span {
+    font-size: calc(15vw);
+    font-weight: 700;
+    display: block;
+    color: #00000088;
+    transform: rotate(90deg);
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    height: fit-content;
+}
+
+/* Movimiento hacia arriba completo */
+@keyframes scrollUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.dust {
+    width: 100vw;
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+    top: -18vh;
+}

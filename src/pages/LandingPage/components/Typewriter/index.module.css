@@ -1,0 +1,54 @@
+.titles__container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 45vh;
+    margin-left: 4rem;
+
+}
+
+.line {
+    font-size: 4rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    font-size: calc(11vw);
+    margin-top: -20px;
+    padding: 0;
+    font-weight: 800;
+    line-height: 0.8;
+    letter-spacing: -12px;
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    height: 1em;
+    background: #fff;
+    margin-left: 4px;
+    animation: blink 0.7s infinite;
+}
+
+
+.titles__container P {
+    font-size: calc(1.5vw);
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    margin-top: 2rem;
+
+}
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}

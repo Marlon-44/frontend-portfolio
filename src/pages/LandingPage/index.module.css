@@ -1,0 +1,33 @@
+.page {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.section {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    background-color: rgba(255, 166, 0, 0.356);
+    background-image: url(/assets/paper.png);
+    
+}
+
+@media (max-width: 768px) {
+    .page {
+        scroll-snap-type: none; /* se desactiva snap */
+    }
+
+    .section {
+        height: auto; /* ya no ocupa toda la pantalla */
+        min-height: 100vh; /* pero sigue siendo alta */
+        padding: 2rem 1rem;
+    }
+}

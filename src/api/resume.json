@@ -1,0 +1,57 @@
+{
+    "name": "Marlon Almanza",
+    "contact": {
+        "phone": "+57 302 445 3961",
+        "email": "marlondavidag44@outlook.com"
+    },
+    "role": "Software Developer - Front End Developer",
+    "description": "Web development professional with a solid foundation in HTML, CSS, JavaScript, and React, focused on creating clean, functional, and responsive interfaces. I quickly adapt to new challenges and enjoy collaborating with teams to find effective solutions.",
+    "experience": [
+        {
+            "position": "Web Developer Intern",
+            "company": "Fundacion Universitaria Colombo Internacional",
+            "responsibilities": [
+                "Assisted in daily configuration of digital student information platforms, ensuring proper operation of user interfaces.",
+                "Integrated API endpoints and optimized data flow between front-end components and backend controllers.",
+                "Collaborated in the development of a web application for internship and thesis project management, contributing to the structure, interface, and functionality.",
+                "Worked with the technical team to resolve code issues and improve efficiency of internal processes.",
+                "Assisted in debugging, code optimization, and improving general application performance.",
+                "Implemented standardized quality control processes to facilitate customer support tasks."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "title": "Associate of Applied Science (A.A.S.) in Information Systems and Software Development",
+            "institution": "Fundacion Universitaria Colombo Internacional - Cartagena"
+        },
+        {
+            "title": "Diploma in Software Development",
+            "institution": "Universidad del Norte - Barranquilla"
+        },
+        {
+            "title": "Front-end Certification",
+            "institution": "Oracle Next Education - Alura"
+        }
+    ],
+    "skills": [
+        "React.js",
+        "Responsive Web Design",
+        "Frontend Web Apps",
+        "Component Applications",
+        "API Integration",
+        "Git / GitHub",
+        "JavaScript Proficiency",
+        "REST APIs",
+        "SPA",
+        "Laravel – Blade"
+    ],
+    "portfolio": {
+        "linkedin": "https://www.linkedin.com/in/marlon-almanza/",
+        "github": "https://github.com/Marlon-44"
+    },
+    "languages": [
+        "English",
+        "Spanish"
+    ]
+}
