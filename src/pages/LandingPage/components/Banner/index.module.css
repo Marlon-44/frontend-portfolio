@@ -3,7 +3,7 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    overflow: visible;
+    overflow: hidden;
     pointer-events: none;
 
     background: linear-gradient(
@@ -20,7 +20,6 @@
     position: relative;
     height: 100%;
     z-index: 2;
-    right: 5vw;
 }
 
 
@@ -69,44 +68,48 @@
 
 
 .carouselWrapper {
-    height: 100vh;
+    width: 100vw;
     overflow: hidden;
     position: absolute;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: flex-end;
-    left: 85vw;
     z-index: 1;
+    rotate: calc(90deg);
+    top: 0;
+    left: 80vh;
 }
 
 .carousel {
-    display: flex;
-    flex-direction: column;
-    animation: scrollUp 15s linear infinite;
+    display: inline-flex;
+    animation: scrollUp 11s linear infinite;
     height: 100%;
+    gap: 0;
+    margin: 0;padding: 0;
+    
 }
 
 /* Estilo para cada letra */
-.carousel span {
+.carousel h2 {
     font-size: calc(15vw);
     font-weight: 700;
-    display: block;
+    display: inline-block;
     color: #00000088;
-    transform: rotate(90deg);
     margin: 0;
     padding: 0;
+    letter-spacing: 0;
     line-height: 1;
-    height: fit-content;
+    height: 30vh;
 }
 
 /* Movimiento hacia arriba completo */
 @keyframes scrollUp {
     0% {
-        transform: translateY(0);
+        transform: translateX(50%);
     }
 
     100% {
-        transform: translateY(-100%);
+        transform: translateX(-50%);
     }
 }
 

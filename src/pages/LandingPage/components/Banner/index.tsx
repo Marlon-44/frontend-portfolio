@@ -17,9 +17,7 @@ export default function Banner() {
 
             <div className={styles.carouselWrapper}>
                 <div className={styles.carousel}>
-                    {"MARLONALMANZA".split("").map((letter, i) => (
-                        <span key={i}>{letter}</span>
-                    ))}
+                    <h2>MARLONALMANZA</h2>
                 </div>
             </div>
 
