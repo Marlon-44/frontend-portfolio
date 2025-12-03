@@ -21,10 +21,10 @@ export default function Banner() {
                 </div>
             </div>
 
-
-            <img src="/assets/foto__con__color2.png" alt="" className={styles.me__img} />
+            <img src="/assets/mew.png" alt="" className={styles.me__img} />
             <img src="/assets/bolsa.svg" alt="" className={styles.dust} />
             <img src="/assets/tela.png" alt="" className={styles.dust} />
+            <img src="/assets/dpaper.png" alt="" className={styles.paper} />
         </div>
     )
 }

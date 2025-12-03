@@ -4,6 +4,7 @@
     position: relative;
     top: 45vh;
     margin-left: 4rem;
+    z-index: 2;
 
 }
 

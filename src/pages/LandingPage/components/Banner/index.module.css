@@ -5,14 +5,8 @@
     display: flex;
     overflow: hidden;
     pointer-events: none;
-
-    background: linear-gradient(
-        to bottom,
-        #ff7503 0%,       /* color principal */
-        #ff7503 80%,      /* 80% del banner */
-        #ff1e00 100%      /* 20% multiplicado / más oscuro */
-    );
     position: relative;
+    
 }
 
 
@@ -114,9 +108,18 @@
 }
 
 .dust {
-    width: 100vw;
+    width: 100%;
     position: absolute;
     z-index: 3;
     pointer-events: none;
-    top: -18vh;
+    display: flex;
+    
+}
+.paper{
+    width: 100%;
+    position: absolute;
+    z-index: 4;
+    pointer-events: none;
+    display: flex;
+    bottom: -2vh;
 }

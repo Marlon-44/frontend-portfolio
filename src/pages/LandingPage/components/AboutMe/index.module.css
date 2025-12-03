@@ -1,24 +1,116 @@
 .container{
-    padding: 4rem;
     display: flex;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    background-color: #fff;
+    
 }
-.title__container{
-    width: 50%;
-}
-.info__container{
-    width: 50%;
-    height: 50vh;
-}
-.title__container h2{
-    color: var(--main-color);
-}
-.info__container p{
-    font-size: calc(1.2vw);
-    text-align: right;
+.title__container__overlay{
+    height: 100vh;
+    width: fit-content;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 4;
+    bottom: 0;
+    margin-left: -10vw;
+
 }
 
+.title__container{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    top: 45vh;
+    left: 7vw;
+}
+
+.title__container h2{
+    color: var(--main-color);
+    color: #000000;
+    font-size: calc(14vw);
+    margin: 0;
+    padding: 0;
+    line-height: 0.9;
+    letter-spacing: -15px;
+    text-wrap: nowrap;
+}
+.title__container__up{
+    z-index: 3;
+}
+
+.title__container__up h2{
+    color: transparent;
+    outline: #fff;
+    -webkit-text-stroke: 1px #fff;
+    font-size: calc(14vw);
+    margin: 0;
+    padding: 0;
+    line-height: 0.9;
+    letter-spacing: -15px;
+    text-wrap: nowrap;
+
+}
+.me{
+    position: relative;
+    padding: 0;
+    width: auto;
+    z-index: 2;
+    bottom: 0;
+    height: 100%;
+}
+.dots{
+    position: absolute;
+    height: 100vh;
+}
+.title__container .orange__tape{
+    width: 20vw;
+    margin-left: calc(-1vw);
+}
+
+.info__container{
+    width: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 5rem;
+    min-width: 500px ;
+    max-height: 800px;
+    max-height: 85vh;
+    padding: 4rem;
+    background-color: #fff;
+
+}
+
+.info__container p{
+    font-size: calc(1.5vw);
+    text-align: right;
+    color: #000;
+}
+
+.info__container h2{
+    font-size: calc(5vw);
+    color: #000;
+    line-height: 2;
+    font-weight: 400;
+    padding-right: 15px;
+}
 .line{
     width: 90%;
-    border-right: 3px solid var(--main-color);
-    height: 50%;
+    border-right: 3px solid #000;
+    height: 20%;
+    margin-right: 60px;
 }
